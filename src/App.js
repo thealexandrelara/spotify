@@ -1,15 +1,18 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import "./styles/global";
+import './styles/global';
+import Sidebar from './components/Sidebar';
+import Player from './components/Player';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Hello, World!</h1>
-      </div>
-    );
-  }
-}
+import { Wrapper, Container } from './styles/components';
+
+const App = () => (
+  <Wrapper>
+    <Container>
+      <Sidebar />
+    </Container>
+    <Player />
+  </Wrapper>
+);
 
 export default App;
